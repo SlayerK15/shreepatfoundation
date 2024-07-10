@@ -176,63 +176,49 @@ h1, h4 {
     line-height: 1.5;
 }
 
+
 /* Footer Section */
 footer {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 2%;
+    padding: 1rem 1%;
     background-color: #f9f9f9;
 }
 
 footer .Name {
-    width: 30%;
+    flex: 1 1 100%; 
     font-size: 2rem;
-    padding-left: 50px;
-}
-
-footer .Navigation {
-    width: 30%;
-}
-
-footer .Navigation ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer .Navigation ul li {
-    display: inline;
-    margin-right: 80px;
+    
+    text-align: center; 
 }
 
 footer .Socials {
-    width: 30%;
+    flex: 1 1 100%; 
+    text-align: center; 
 }
 
-footer .Socials img{
+footer .Socials img {
     width: 30px;
 }
+
 footer .Socials a {
-    color: #333; /* Adjust icon color */
+    color: #333; 
     text-decoration: none;
     margin-right: 10px;
-    font-size: 1.5rem; /* Adjust icon size as needed */
+    font-size: 1.5rem; 
 }
 
-.Navigation a {
-    color: #333;
-    text-decoration: none;
-    margin-right: -30px;
-    font-size: 20px;
-}
 
-footer .Name img{
+
+footer .Name img {
     width: 30px;
 }
 
 footer .Socials p {
     margin: 5px 0;
-    font-size: 0.9rem; /* Adjust text size as needed */
+    font-size: 0.9rem; 
 }
 
 /* Device-specific styles */
@@ -254,6 +240,7 @@ body.mobile .testimony1, body.tablet .testimony1 {
     width: 100%;
     margin: 1rem 0;
 }
+
 
 @media (max-width: 600px) {
     .Introduction {
@@ -284,5 +271,13 @@ body.mobile .testimony1, body.tablet .testimony1 {
     .testimony1 {
         width: 100%;
         margin: 1rem 0;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    footer .Name {
+        font-size: 1.4rem;
+        padding-left: 30px;
     }
 }
