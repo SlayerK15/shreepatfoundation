@@ -1,0 +1,288 @@
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px; /* Adjust based on your logo size */
+    margin-right: 1rem;
+}
+
+.logo h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007bff; /* Change to the desired hover color */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .navbar a {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h4 {
+    margin: 0;
+}
+
+/* Introduction Section */
+.Introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 10%;
+    background-color: #fff;
+    gap: 4rem;
+}
+
+
+.logoimage img {
+    max-width: 100%;
+    height: auto;
+    /*max-height: 300px;  Adjust as needed */
+}
+
+.Information {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.Information .heading h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.Information .info p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Team Section */
+.Team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    background-color: #f9f9f9;
+    gap: 4rem;
+}
+
+.Team .Image img {
+    max-width: 100%;
+    height: auto;
+    /*max-height: 400px;  Adjust as needed */
+}
+
+.Teaminfo {
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.Teaminfo h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.Teaminfo p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Testimonies Section */
+.Testimonies {
+    padding: 2rem 2%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.Testimonies h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.testimony1 {
+    display: inline-block;
+    width: 20%;
+    margin: 1% 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.testimony1 img {
+    width: 100%;
+    height: auto;
+    /*border-radius: 50%;
+    max-height: 200px;  Adjust as needed */
+}
+
+.testimony1 h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.testimony1 p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2%;
+    background-color: #f9f9f9;
+}
+
+footer .Name {
+    width: 30%;
+    font-size: 2rem;
+    padding-left: 75px;
+}
+
+footer .Navigation {
+    width: 30%;
+}
+
+footer .Navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .Navigation ul li {
+    display: inline;
+    margin-right: 80px;
+}
+
+footer .Socials {
+    width: 30%;
+}
+
+footer .Socials img{
+    width: 30px;
+}
+footer .Socials a {
+    color: #333; /* Adjust icon color */
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem; /* Adjust icon size as needed */
+}
+
+.Navigation a {
+    color: #333;
+    text-decoration: none;
+    margin-right: -30px;
+    font-size: 20px;
+}
+
+footer .Name img{
+    width: 30px;
+}
+
+footer .Socials p {
+    margin: 5px 0;
+    font-size: 0.9rem; /* Adjust text size as needed */
+}
+
+/* Device-specific styles */
+body.mobile .Introduction {
+    flex-direction: column;
+    padding: 2rem 5%;
+}
+
+body.tablet .Introduction {
+    padding: 3rem 8%;
+}
+
+body.mobile .Team, body.tablet .Team {
+    flex-direction: column;
+    padding: 2rem 5%;
+}
+
+body.mobile .testimony1, body.tablet .testimony1 {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+    .Introduction {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    .Team {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    .testimony1 {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Introduction {
+        padding: 3rem 8%;
+    }
+
+    .Team {
+        padding: 3rem 8%;
+    }
+
+    .testimony1 {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shreepat Foundation</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./Stock/shreepat foundation logo.jpg" alt="mainlogo">
+        <h3>Shreepat Foundation</h3>
+    </div>
+    <div class="navbar">
+        <a href="#Team"><span>About</span></a>
+        <a href="#Testimonies"><span>Testimonies</span></a>
+        <a href="#footer"><span>Contact Us</span></a>
+    </div>
+  </header>
+  
+  <main>
+    <div class="Introduction">
+      <div class="logoimage">
+        <img src="./Stock/shreepat foundation logo.jpg" alt="logophoto">
+      </div>
+      <div class="Information">
+        <div class="heading">
+          <h1>The Way of Excellence & Perfection</h1>
+        </div>
+        <div class="info">
+          <p>Welcome to Shreepat Foundation, where we aim to empower students to ace important civil services exams such as CSAT, MPSC, UPSC, and other government exams.</p>
+          <p>We offer expert guidance and comprehensive study materials to help you achieve your goals and realize your dreams.</p>
+        </div>
+      </div>
+    </div>
+    <div class="Team" id="Team">
+      <div class="Image">
+        <img src="./Stock/Teamphoto1.jpg" alt="teamimage">
+      </div>
+      <div class="Teaminfo">
+        <div class="leftboxtop">
+          <h1>Introducing the Shreepat Foundation Team</h1>
+        </div>
+        <div class="leftboxbottom">
+          <p>Welcome to the Shreepat Foundation, a place where learning is fun and interactive with an expert team of educators. </p>
+          <p>Since our establishment in 2014, we have been providing high-quality education to the students in Amravati. </p>
+          <p>Get to know our founder Sachin S. Wankhade and his vision to change the way we learn today.</p>
+        </div>
+      </div>
+    </div>
+    <div class="Testimonies" id="Testimonies">
+      <div class="testimony1">
+        <div class="Imageofstudent">
+          <img src="./Stock/person.jpg" alt="student1">
+        </div>
+        <div class="Nameofstudent">
+          <h4>Name Here</h4>
+        </div>
+        <div class="testimonyofstudent">
+          <p>This is your Testimonial quote. Give your customers the stage to tell the world how great you are!</p>
+        </div>
+      </div>
+      <div class="testimony1">
+        <div class="Imageofstudent">
+          <img src="./Stock/person.jpg" alt="student1">
+        </div>
+        <div class="Nameofstudent">
+          <h4>Name Here</h4>
+        </div>
+        <div class="testimonyofstudent">
+          <p>This is your Testimonial quote. Give your customers the stage to tell the world how great you are!</p>
+        </div>
+      </div>
+      <div class="testimony1">
+        <div class="Imageofstudent">
+          <img src="./Stock/person.jpg" alt="student1">
+        </div>
+        <div class="Nameofstudent">
+          <h4>Name Here</h4>
+        </div>
+        <div class="testimonyofstudent">
+          <p>This is your Testimonial quote. Give your customers the stage to tell the world how great you are!</p>
+        </div>
+      </div>
+      <div class="testimony1">
+        <div class="Imageofstudent">
+          <img src="./Stock/person.jpg" alt="student1">
+        </div>
+        <div class="Nameofstudent">
+          <h4>Name Here</h4>
+        </div>
+        <div class="testimonyofstudent">
+          <p>This is your Testimonial quote. Give your customers the stage to tell the world how great you are!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="Name"><p>Shreepat Foundation</p>
+        <a href="https://www.youtube.com/@shreepateducation-maths_reason" target="_blank"><img src="/Stock/youtube-fill.svg"></a>
+        <a href="https://www.facebook.com/ShreepatFoundationCSAT" target="_blank"><img src="/Stock/facebook-fill.svg"></a>
+        <a href="https://www.instagram.com/foundationshreepat/?hl=en" target="_blank"><img src="/Stock/instagram-line.svg"></a>
+        <a href="" target="_blank"><img src="/Stock/linkedin-line.svg"></a>
+        <a href="mailto:shreepatfoundation@gmail.com" target="_blank"><img src="/Stock/mail-fill.svg"></a>
+    </div>
+    <div class="Navigation">
+      <ul>
+        <a href="#Team"><li>About</li></a>
+        <a href="#Testimonies"><li>Testimonies</li></a>
+        <a href="#footer"><li>Contact</li></a>
+      </ul>
+    </div>
+    <div class="Socials">
+
+      <br>
+      <p>Tel. +9170839 78789</p>
+      <p>Rashtrasant Tukdoji Maharaj Mandir,</p> 
+      <p>Radha Nager, Gadge Nagar, </p>
+      <p>Amravati, Maharashtra, India</p>
+    </div>
+  </footer>
+
+  <script>
+    function detectDevice() {
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            return 'mobile';
+        }
+
+        if (/android/i.test(userAgent)) {
+            return 'mobile';
+        }
+
+        if (/windows phone/i.test(userAgent)) {
+            return 'mobile';
+        }
+
+        if (/tablet|ipad|playbook|silk/i.test(userAgent)) {
+            return 'tablet';
+        }
+
+        return 'desktop';
+    }
+
+    function loadDeviceSpecificContent() {
+        var device = detectDevice();
+
+        if (device === 'mobile') {
+            document.body.classList.add('mobile');
+        } else if (device === 'tablet') {
+            document.body.classList.add('tablet');
+        }
+    }
+
+    window.onload = loadDeviceSpecificContent;
+  </script>
+</body>
+</html>
